@@ -1,0 +1,207 @@
+@media (min-width: 1200px) {
+    .container {
+        width: 920px;
+    }
+}
+@font-face {
+    font-family: univers_condensedmedium;
+    src: url(../font/UniversCondensedMedium.ttf);
+}
+.header {
+    height: 200px;
+    background: #2aabd2;
+}
+/* container */
+/* categories */
+.top-menu {
+    border-bottom: 1px solid #c2c2c2;
+    padding: 10px 0;
+}
+.top-menu,
+.root-items {
+    left: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 7;
+}
+.top-menu .root-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+.top-menu:hover .root-items {
+    background-image: url(../img/header_menu_bg.png);
+    background: #000;
+}
+.top-menu .root-items .list__item {
+    display: table;
+    float: left;
+    overflow: hidden;
+    padding: 0px 10px;
+    vertical-align: top;
+    width: 14%;
+    z-index: 5;
+}
+.top-menu .root-items .vm {
+    padding-bottom: 5px;
+}
+.top-menu .root-items .vm_link {
+    text-decoration: none;
+    color: #464646;
+    font-family: 'univers_condensedmedium';
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.top-menu .list__item p {
+    padding: 5px 0px;
+}
+/* sub_item */
+.top-menu .list__item .sub-item {
+    background: #fff;
+    border-radius: 0px 0px 15px 15px;
+    border: 1px solid #aaa;
+    display: none;
+    list-style: none;
+    margin-left: -10px;
+    padding-left: 10px;
+    position: absolute;
+    width: 100%;
+}
+.top-menu .list__item:hover .sub-item {
+    display: block;
+    padding-top: 30px;
+}
+.top-menu .list__item .list__sub-item {
+    display: table;
+    float: left;
+    max-width: 14.2%;
+    overflow: hidden;
+    padding: 0px 10px;
+    text-align: left;
+}
+.top-menu .list__item .list__sub-item img {
+  height: auto;
+  max-width: 100%;
+}
+/* slider */
+.slide {
+    background: #fff;
+    margin-top: 20px;
+}
+.slide .carousel__buttom >li {
+    border-radius: 47%;
+    border: 0px solid #999;
+    box-shadow: 0px 1px 5px #555 inset;
+    height: 10px;
+    margin: 0px 3px;
+    width: 10px;
+}
+.container__cdop {
+    border-bottom: 1px solid #c2c2c2;
+    border-top: 1px solid #c2c2c2;
+    margin-top: 20px;
+    padding: 30px 0px 30px;
+    text-align: center;
+}
+.container__cdop .cdop-list {
+    background: #f2f2f2;
+    border-radius: 10px;
+    border: solid 1px #c2c2c2;
+    display: inline-block;
+    font-family: 'pf_dindisplay_proregular';
+    font-size: 12px;
+    height: 230px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+.cdop-list > h1,h3 {
+    font-family: 'univers_condensedmedium';
+    font-size: 16px;
+    font-weight: inherit;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+}
+.new_title,
+.news_viewall {
+    color: #1C334D;
+    padding-bottom: 10px;
+}
+.new_title .new_title-link {
+    color: inherit;
+    font-weight: inherit;
+}
+.new_title .new_title-link:hover {
+    text-decoration: none;
+}
+.new_date {
+    display: none;
+}
+.news_viewall > a,
+.cpt_news_short_list > a,
+.list__item >li > a, h3>a {
+    color: #464646;
+    text-decoration: underline;
+}
+.cdop-list>h3>a {
+    font-size: 75%;
+}
+.list__item {
+    list-style: none;
+    padding: 0;
+}
+/* container__pdop */
+.conteiner__bdop {
+    margin-top: 30px;
+    padding: 30px 0px;
+    text-align: center;
+}
+.content .image-content1,
+.content .image-content2,
+.content .image-content3,
+.content .image-content4 {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+}
+.content .image-content1 {
+    max-width: 160px;
+}
+.content .image-content2 {
+    max-width: 220px
+}
+.content .image-content3 {
+    max-height: 147px;
+    max-width: 160px;
+}
+.content .image-content4 {
+    max-height: 147px;
+    max-width: 200px;
+}
+/* footer */
+.footer {
+    border-top: 1px solid #ccc;
+    color: #959595;
+    font-size: 12px;
+    height: 50px;
+    margin-top: 5px;
+    position: absolute;
+    width: 100%;
+}
+.footer-item {
+    padding-top: 10px;
+}
+.yashare-auto-init {
+    margin-top: -4px;
+}
+.crear {
+    background: url(../img/crear.png) no-repeat center;
+    float: right;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 100px;
+}
