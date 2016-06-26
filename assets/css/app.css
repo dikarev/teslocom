@@ -1,4 +1,9 @@
 @media (min-width: 1200px) {
+    .header .container {
+        width: 990px;
+    }
+}
+@media (min-width: 1200px) {
     .container {
         width: 920px;
     }
@@ -7,9 +12,78 @@
     font-family: univers_condensedmedium;
     src: url(../font/UniversCondensedMedium.ttf);
 }
-.header {
-    background: #2aabd2;
-    height: 200px;
+/* header */
+.header .block__header {
+    background-color: #000000;
+    border-radius: 15px;
+    border: 1px solid #4a4a4a;
+    box-shadow: 0 0 10px rgba(0,0,0,0.35);
+    left: 0;
+    margin: 0;
+    padding: 15px 30px 5px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 130;
+}
+.header .block__top {
+    border-bottom: solid 1px #3f3f3f;
+    left: 0;
+    padding: 0 0 5px 0;
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+.header .header__logo {
+    padding-top: 8px;
+    width: 110%;
+}
+.header .fa-phone {
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    color: #e1e1e1;
+    float: left;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 30px;
+    z-index: 2;
+}
+.header .phone__number {
+    list-style: none;
+    padding: 0 0 0 30px;
+}
+header .phone__number .number {
+    color: #e1e1e1;
+    font-family: 'univers_condensedmedium';
+    font-size: 18px;
+}
+/* search */
+.header .search {
+    left: 0;
+    margin: 5px -15px 0 -15px;
+    position: relative;
+    top: 0;
+    z-index: 125;
+}
+.header .search__form {
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    color: #000000;
+    font-family: 'pf_dindisplay_proregular';
+    padding: 3px 5px;
+    width: 90%;
+}
+.header .search [type=submit] {
+    background: transparent url(../img/srch.png) no-repeat center;
+    border: 0 none;
+    cursor: pointer;
+    height: 20px;
+    text-indent: -9999px;
+    width: 20px;
 }
 /* container */
 /* categories */
@@ -33,7 +107,7 @@
 }
 .top-menu .root-items:hover .list__item:after,
 .top-menu .sub-item:hover .list__sub-item:after {
-    background: rgba(255,255,255, 0.5);
+    background: rgba(255,255,255, 0.3);
     content: '';
     display: block;
     height: 100%;
@@ -104,6 +178,8 @@
     position: absolute;
     width: 100%;
     z-index: 50;
+    left: 0;
+    margin-left: 0.5px;
 }
 .top-menu .list__item:hover .sub-item {
     display: block;
@@ -134,67 +210,68 @@
     margin: 0px 3px;
     width: 10px;
 }
-/* container__cdop */
-.container__cdop {
+/* information */
+.information {
     border-bottom: 1px solid #c2c2c2;
     border-top: 1px solid #c2c2c2;
     margin-top: 20px;
-    padding: 30px 0px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
 }
-.container__cdop .cdop-list {
+.information .information__list {
     background: #f2f2f2;
     border-radius: 10px;
     border: solid 1px #c2c2c2;
     display: inline-block;
     font-family: 'pf_dindisplay_proregular';
     font-size: 12px;
-    height: 230px;
     margin-bottom: 10px;
     overflow: hidden;
     padding: 15px;
     text-align: left;
     vertical-align: top;
 }
-.cdop-list > h1,h3 {
+.information__list > h1,h3 {
     font-family: 'univers_condensedmedium';
     font-size: 16px;
     font-weight: inherit;
     margin: 0 0 5px 0;
     text-transform: uppercase;
 }
-.new_title,
-.news_viewall {
+.information .new_title,
+.information .news_viewall {
     color: #1C334D;
     padding-bottom: 10px;
 }
-.new_title .new_title-link {
+.information .new_title .new_title-link {
     color: inherit;
     font-weight: inherit;
 }
-.new_title .new_title-link:hover {
+.information .new_title .new_title-link:hover {
     text-decoration: none;
 }
-.new_date {
+.information .new_date {
     display: none;
 }
-.news_viewall > a,
-.cpt_news_short_list > a,
-.list__item >li > a, h3>a {
+.information .news_viewall > a,
+.information .information__wholesalers > a,
+.information .list__item >li > a, h3>a {
     color: #464646;
     text-decoration: underline;
 }
-.cdop-list>h3>a {
+.information .information__list>h3>a {
     font-size: 75%;
 }
-.list__item {
+.information .list__item {
     list-style: none;
     padding: 0;
 }
-/* container__pdop */
-.conteiner__bdop {
+/* container__brand */
+.conteiner__brand {
     margin-top: 30px;
-    padding: 30px 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
 }
 .content .image {

@@ -12,7 +12,42 @@
     </head>
     <body>
         <header class="header">
+            <div class="container">
+                <div class="block__header">
+                    <div class="block__top">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-2">
+                                <div class="header__logo">
+                                    <a href="#"><img class="img-responsive" src="assets/img/logo.png" alt="Logo"/></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <i class="fa fa-phone"></i>
+                                <ul class="phone__number">
+                                    <li class="number">+7 <span>(495)</span> 363-25-49</li>
+                                    <li class="number">+7 <span>(916)</span> 694-91-87</li>
+                                </ul>
+                            </div>
 
+                            <div class="col-sm-6 col-md-5">
+                                <form method="get" action="/search/">
+                                    <div class="search">
+                                        <input class="search__form" type="text"  name="query"  placeholder="Напишите модель ноутбука или самого устройства" autocomplete="off" />
+                                        <input type="submit" value="Найти">
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="col-sm-6 col-md-2">
+                                <img src="assets/img/cart.png" alt="Корзина" />
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block__bottom"></div>
+                </div>
+            </div>
         </header>
 
         <div class="content">
@@ -83,6 +118,35 @@
                                     <span class="name">Автозарядки</span>
                                 </a>
                             </div>
+
+                            <ul class="sub-item">
+                                <li class="list__sub-item">
+                                    <div class="vm">
+                                        <a  class="link" href='/category/avtozarjadki-dlja-planshetov/'>
+                                            <p><img src="assets/img/avtz_pl.png" alt="Автозярядки для планшетов"></p>
+                                            <span class="name">Автозарядки для планшетов</span>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li class="list__sub-item">
+                                    <div class="vm">
+                                        <a class="link" href='/category/avtomobilnye-zarjadnye-ustrojstva/'>
+                                            <p><img src="assets/img/avtz_nb.png" alt="Автозарядки для ноутбукув"></p>
+                                            <span class="name">Автозарядки для ноутбуков</span>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li class="list__sub-item">
+                                    <div class="vm">
+                                        <a class="link" href='/category/avtoinvertory/'>
+                                            <p><img src="assets/img/avtoinvertory.jpg" alt="Автоинверторы"></p>
+                                            <span class="name">Автоинверторы</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
 
                         <li class="list__item">
@@ -159,11 +223,11 @@
                     </div>
                 </div>
             </div>
-
-            <div class="container container__cdop">
+            <!-- information -->
+            <div class="container information">
                 <div class="row">
                     <div class="col-sm-4">
-                        <div class="cdop-list">
+                        <div class="information__list">
                             <h1>ОТЗЫВЫ ПОКУПАТЕЛЕЙ</h1>
                             <div class="new_date">12 мая 2016</div>
                             <div class="new_title">
@@ -183,9 +247,9 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="cdop-list">
+                        <div class="information__list">
                             <h1>ОПТОВИКАМ</h1>
-                            <div class="cpt_news_short_list">Формируем дилерскую сеть по России, предлагаем выгодные условия для сотрудничества.
+                            <div class="information__wholesalers">Формируем дилерскую сеть по России, предлагаем выгодные условия для сотрудничества.
                                 <br/>
                                 По всем вопросам относительно сотрудничества, вы можете обращаться на e-mail: <a href="mailto:teslocom@mail.ru" rel="nofollow">teslocom@mail.ru</a><br /><br />
                                 <strong>Телефоны для связи с оптовым отделом:</strong><br/>
@@ -195,7 +259,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="cdop-list">
+                        <div class="information__list">
                             <h3><a href="http://teslocom.ru/blog-teslokom/">Статьи.</a></h3>
                             <ul  class="list__item">
                                 <li>
@@ -216,7 +280,7 @@
                 </div>
             </div>
 
-            <div class="container conteiner__bdop">
+            <div class="container conteiner__brand">
                 <div class="row">
                     <div class="col-xs-6 col-md-3">
                         <img class="img-responsive image" src="assets/img/warranty.jpeg" alt="Warranty"/>
