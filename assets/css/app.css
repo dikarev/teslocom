@@ -29,7 +29,7 @@
 .header .block__top {
     border-bottom: solid 1px #3f3f3f;
     left: 0;
-    padding: 0 0 5px 0;
+    padding-bottom: 5px;
     position: relative;
     top: 0;
     z-index: 1;
@@ -54,7 +54,7 @@
 }
 .header .phone__number {
     list-style: none;
-    padding: 0 0 0 30px;
+    padding-left: 30px;
 }
 header .phone__number .number {
     color: #e1e1e1;
@@ -85,7 +85,77 @@ header .phone__number .number {
     text-indent: -9999px;
     width: 20px;
 }
-/* container */
+/* header-cart */
+.header .image-cart {
+    float: left;
+}
+.header .cart {
+    font-size: 12px;
+    color: #a1a1a1;
+    padding-top: 22px;
+}
+/* block__bottom */
+.header .block__bottom {
+    background: none;
+    color: #a1a1a1;
+}
+.header .block__bottom .navbar__bottom {
+    background: none;
+    margin: 0;
+}
+.header .block__bottom .work-schedule {
+    font-size: 12px;
+    padding-top: 10px;
+}
+.header .block__bottom .navbar__log,
+.header .block__bottom .navbar__item,
+.header .block__bottom .navbar__more {
+    margin-top: 8px;
+    padding: 0 10px;
+}
+.header .block__bottom .login {
+    border-bottom: dashed 1px #a1a1a1;
+    color: #a1a1a1;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+.header .block__bottom .login:hover {
+    border-bottom: none;
+}
+.header .block__bottom .about-us, .services, .pickup, .cooperation, .contact {
+    color: #a1a1a1;
+    font-family: 'univers_condensedmedium';
+    font-size: 18px;
+    margin: 0;
+    padding-top: 8px;
+    text-transform: uppercase;
+}
+.header .block__bottom .navbar__item:hover {
+    background: #fff;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+.header .block__bottom .about-us:hover,
+.header .block__bottom .services:hover,
+.header .block__bottom .pickup:hover,
+.header .block__bottom .cooperation:hover,
+.header .block__bottom .contact:hover {
+    color: #a1a1a1;
+    text-decoration: none;
+}
+.header .block__bottom .more {
+    background: none;
+    border: none;
+    color: #fff;
+    font-family: 'univers_condensedmedium';
+    font-size: 18px;
+    margin-top: 8px;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* content */
 /* categories */
 .top-menu {
     border-bottom: 1px solid #c2c2c2;
@@ -155,13 +225,13 @@ header .phone__number .number {
     text-transform: uppercase;
 }
 .top-menu .root-items .name:after {
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0),#fff 100%,#fff 10%,#fff);
+    bottom: 0;
+    content: '';
     position: absolute;
     right: 0;
-    bottom: 0;
     top: 0;
     width: 20px;
-    content: '';
-    background: -webkit-linear-gradient(left,rgba(255,255,255,0),#fff 100%,#fff 10%,#fff);
 }
 .top-menu .list__item p {
     padding: 5px 0px;
@@ -172,27 +242,27 @@ header .phone__number .number {
     border-radius: 0px 0px 15px 15px;
     border: 1px solid #aaa;
     display: none;
+    left: 0;
     list-style: none;
     margin-left: -10px;
+    margin-left: 0.5px;
     padding-left: 10px;
     position: absolute;
     width: 100%;
     z-index: 50;
-    left: 0;
-    margin-left: 0.5px;
 }
 .top-menu .list__item:hover .sub-item {
     display: block;
     padding-top: 30px;
 }
 .top-menu .list__item .list__sub-item {
+    display: table;
     float: left;
     max-width: 14.2%;
     overflow: hidden;
     padding: 0px 10px;
-    text-align: left;
     position: relative;
-    display: table;
+    text-align: left;
 }
 .top-menu .list__item .list__sub-item .vm .link .name {
     margin-top: 20px;
@@ -215,8 +285,8 @@ header .phone__number .number {
     border-bottom: 1px solid #c2c2c2;
     border-top: 1px solid #c2c2c2;
     margin-top: 20px;
-    padding-top: 30px;
     padding-bottom: 30px;
+    padding-top: 30px;
     text-align: center;
 }
 .information .information__list {
@@ -270,8 +340,8 @@ header .phone__number .number {
 /* container__brand */
 .conteiner__brand {
     margin-top: 30px;
-    padding-top: 30px;
     padding-bottom: 30px;
+    padding-top: 30px;
     text-align: center;
 }
 .content .image {
