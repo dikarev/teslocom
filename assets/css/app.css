@@ -12,6 +12,10 @@
     font-family: univers_condensedmedium;
     src: url(../font/UniversCondensedMedium.ttf);
 }
+.no-gutter >[class*='col-']{
+    padding-left: 0;
+    padding-right: 0;
+}
 /* header */
 .header .block__header {
     background-color: #000000;
@@ -140,7 +144,7 @@ header .phone__number .number {
 .header .block__bottom .pickup:hover,
 .header .block__bottom .cooperation:hover,
 .header .block__bottom .contact:hover {
-    color: #a1a1a1;
+    color: #464646;
     text-decoration: none;
 }
 .header .block__bottom .more {
@@ -154,7 +158,47 @@ header .phone__number .number {
     text-decoration: none;
     text-transform: uppercase;
 }
-
+.header .block__bottom .dropdown__more-menu {
+    border-radius: 10px;
+    border: 1px solid #c2c2c2;
+    left: -15px;
+    margin-top: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.35);
+}
+.header .block__bottom .dropdpwn__more-item {
+    color: #5081A4;
+    font-family: 'univers_condensedmedium';
+    font-size: 14px;
+    margin: 10px 0;
+    text-decoration: underline;
+    text-transform: none;
+}
+.header .block__bottom .dropdpwn__more-item:hover {
+    background: none;
+    text-decoration: none;
+}
+.popoverp:before {
+    border: solid transparent;
+    border-bottom-color: #c2c2c2;
+    border-width: 17px;
+    bottom: 100%;
+    content: " ";
+    height: 0;
+    margin-left: 17px;
+    position: absolute;
+    width: 0;
+}
+.popoverp:after {
+    border: solid transparent;
+    border-bottom-color: #fff;
+    border-width: 17px;
+    bottom: 99%;
+    content: " ";
+    height: 0;
+    margin-left: 17px;
+    position: absolute;
+    width: 0;
+}
 /* content */
 /* categories */
 .top-menu {
@@ -255,6 +299,32 @@ header .phone__number .number {
     display: block;
     padding-top: 30px;
 }
+/* angle sub-item */
+.top-menu .root-items .sub-item:before {
+    border-color: #aaa transparent transparent transparent;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    content: '';
+    height: 0;
+    left: 43.5px;
+    position: absolute;
+    top: 0px;
+    width: 0;
+    z-index: 1;
+}
+.top-menu .root-items .sub-item:after {
+    border-color: #fff transparent transparent transparent;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    content: '';
+    height: 0;
+    left: 43.5px;
+    position: absolute;
+    top: -1px;
+    width: 0;
+    z-index: 1;
+}
+/* end angle sub-item */
 .top-menu .list__item .list__sub-item {
     display: table;
     float: left;
@@ -285,9 +355,12 @@ header .phone__number .number {
     border-bottom: 1px solid #c2c2c2;
     border-top: 1px solid #c2c2c2;
     margin-top: 20px;
+    padding-top: 37px;
     padding-bottom: 30px;
-    padding-top: 30px;
     text-align: center;
+}
+.information .information__block {
+
 }
 .information .information__list {
     background: #f2f2f2;
@@ -301,6 +374,7 @@ header .phone__number .number {
     padding: 15px;
     text-align: left;
     vertical-align: top;
+    height: 240px;
 }
 .information__list > h1,h3 {
     font-family: 'univers_condensedmedium';
