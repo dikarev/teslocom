@@ -1,0 +1,54 @@
+.content .customer-reviews {
+    margin: 0;
+    text-align: left;
+}
+.content .customer-reviews > h1 {
+    font-family: 'univers_condensedmedium'!important;
+    font-size: 24px;
+    font-weight: normal;
+}
+.content .customer-reviews .post {
+    font-size: 75%;
+    margin-bottom: 80px;
+}
+.content .customer-reviews .post  h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    text-transform: none;
+}
+.content .customer-reviews .post .name {
+    color: #464646;
+    text-decoration: none;
+}
+.content .customer-reviews .post .credentials {
+   display: inline-block;
+   margin-bottom: 20px;
+}
+.content .customer-reviews .post .credentials .userpic {
+    float: left;
+    margin-right: 2px;
+}
+.content .customer-reviews .post .credentials .username {
+    color: #777;
+    display: inline-block;
+    padding-top: 3px;
+    text-decoration: underline;
+    vertical-align: middle;
+}
+.content .customer-reviews .post .credentials:hover .username {
+    color: red;
+}
+.content .customer-reviews .post .credentials .date {
+    color: #aaa;
+    display: inline-block;
+    font-size: 0.9em;
+    margin: 0 3px;
+    padding-top: 3px;
+    vertical-align: middle;
+}
+.content .customer-reviews .post .text {
+
+}
