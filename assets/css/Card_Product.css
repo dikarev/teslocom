@@ -12,7 +12,8 @@
     font-weight: normal;
 }
 .content .wrapper__price,
-.content .block_price_information {
+.content .block_price_information,
+.content .block_price_information .block_price_list {
     border-radius: 10px;
     border: 1px solid #e9e9e9;
     padding: 5px;
@@ -86,4 +87,52 @@
 }
 .content .opt-price {
     width: 100%;
+}
+.content .block_price_information .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+.content .block_price_list .price-delivere {
+    background: url(../img/icon-delivery.png) no-repeat center 10px;
+    text-align: center;
+}
+.content .block_price_list .price-pickup {
+    background: url(../img/icon-pickup.png) no-repeat center 10px;
+    text-align: center;
+}
+.content .block_price_list .price-pay {
+    background: url(../img/icon-pay.png) no-repeat center 10px;
+    text-align: center;
+}
+.content .block_price_list  .information-item {
+    text-decoration: none;
+    font-size: 13px;
+    color: #464646;
+}
+.content .block_price_list  .information-item:hover {
+    font-size: 14px;
+    transition: all 0.2s linear;
+}
+.content .block_price_information .block_phone_order {
+    background: url(../img/icon-phone.png) no-repeat right center #fff;
+    margin-top: 9px;
+    padding: 14px 100px 14px 10px;
+    text-align: center;
+}
+.content .block_price_information .block_phone_order p {
+    color: #4f0046;
+    font-size: 16px;
+    font-weight: bold;
+}
+.content .block_price_information .block_phone_order h3 {
+    color: #000;
+    font: 14px Arial;
+    margin: 0;
+    padding: 0;
+}
+.content .block_price_information .block_phone_order h3 span {
+    color: #ed1c24;
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 5px;
 }
