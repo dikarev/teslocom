@@ -11,6 +11,50 @@
     font-size: 24px;
     font-weight: normal;
 }
+/* wrapper-carusel */
+.container-fluid .stage-container .jcarousel-wrapper {
+    position: relative;
+}
+.container-fluid .stage-container .jcarousel-wrapper .jcarousel {
+    overflow: hidden;
+    position: relative;
+}
+.container-fluid .stage-container .jcarousel-wrapper .jcarousel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 20000em;
+}
+.container-fluid .stage-container .jcarousel-wrapper .jcarousel li {
+    float: left;
+}
+.container-fluid .stage-container .jcarousel-wrapper .jcarousel img {
+    display: block;
+    height: auto !important;
+    max-width: 100%;
+}
+.container-fluid .stage-container .jcarousel-wrapper .jcarousel-control-left {
+    left: 0;
+}
+.container-fluid .stage-container .jcarousel-wrapper .jcarousel-control-right {
+    right: 0;
+}
+.container-fluid .stage-container .jcarousel-wrapper .jcarousel-control-left,
+.container-fluid .stage-container .jcarousel-wrapper .jcarousel-control-right {
+    background: #908a85;
+    border-radius: 50%;
+    color: #fff;
+    font: 41px/24px Arial, sans-serif;
+    height: 32px;
+    margin-top: -15px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 50%;
+    width: 32px;
+}
+/* end wrapper-carusel */
 .content .wrapper__price,
 .content .block_price_information,
 .content .block_price_information .block_price_list {
@@ -105,9 +149,9 @@
     text-align: center;
 }
 .content .block_price_list  .information-item {
-    text-decoration: none;
-    font-size: 13px;
     color: #464646;
+    font-size: 13px;
+    text-decoration: none;
 }
 .content .block_price_list  .information-item:hover {
     font-size: 14px;
@@ -135,4 +179,67 @@
     font-size: 21px;
     font-weight: bold;
     margin-left: 5px;
+}
+/* information product */
+.content .tabs .nav-pills .item {
+    margin-right: 10px;
+}
+.content .tabs .nav-pills .item:after {
+    background: #bdbdbd;
+    background-image: linear-gradient(#bdbdbd,#4a4a4a);
+    border-radius: 15px;
+    content: '';
+    display: block;
+    height: 10%;
+    left: 2%;
+    margin-top: 1px;
+    position: absolute;
+    top: 0%;
+    width: 96%;
+}
+.content .tabs .nav-pills .item .item-link:hover {
+    background: #4a4a4a;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    transition: all 0.3s linear;
+    z-index: 2;
+}
+.content .tabs .nav-pills .item .item-link {
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'univers_condensedmedium'!important;
+    font-size: 16px;
+    padding: 7px 25px;
+    border-radius: 5px;
+}
+.content .pppp {
+    border-bottom: 1px solid #c2c2c2;;
+    border-left: 1px solid #c2c2c2;
+    border-radius: 10px;
+    border-right: 1px solid #c2c2c2;
+    font-size: 13px;
+    padding: 20px 10px 10px 10px;
+}
+.content .pppp .about-show {
+
+}
+.content .pppp .reviews {
+    margin-bottom: 20px;
+}
+.content .pppp .reviews a,
+.content .pppp .quation a {
+    color: #464646;
+    text-decoration: underline;
+}
+.content .pppp .quation a {
+    font-weight: bold;
+    font-size: 16px;
+}
+.content .pppp .quation a:hover {
+    text-decoration: none;
+}
+.content .pppp hr {
+    border-color: grey;
 }

@@ -142,14 +142,20 @@ header .phone__number .number {
 .header .block__bottom .login:hover {
     border-bottom: none;
 }
-.header .block__bottom .about-us, .services, .pickup, .cooperation, .contact {
+.header .block__bottom .about-us,
+.header .block__bottom .services,
+.header .block__bottom .pickup,
+.header .block__bottom .cooperation,
+.header .block__bottom .contact {
     color: #a1a1a1;
     font-family: 'univers_condensedmedium';
     font-size: 18px;
     margin: 0;
     padding-top: 8px;
+    text-decoration: none;
     text-transform: uppercase;
 }
+
 .header .block__bottom .navbar__item:hover {
     background: #fff;
     border-radius: 4px;
