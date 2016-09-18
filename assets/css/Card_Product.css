@@ -115,15 +115,15 @@
 }
 .content .wrapper__price .block_before_buy .add-cart,
 .content .opt-price {
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(201,87,3,0.35);
-    transition: all 0.3s linear;
     border-radius: 0;
+    box-shadow: 0 0 10px rgba(201,87,3,0.35);
+    cursor: pointer;
+    transition: all 0.3s linear;
 }
 .content .wrapper__price .block_before_buy .add-cart:hover,
 .content .opt-price:hover {
-    box-shadow: 0 0 10px rgba(201,87,3,1);
     background: #ff7b0d;
+    box-shadow: 0 0 10px rgba(201,87,3,1);
 }
 .content .wrapper__price .block_before_buy .buy-click,
 .content .opt-price {
@@ -132,30 +132,43 @@
 .content .opt-price {
     width: 100%;
 }
+/* .block_price_information */
+
 .content .block_price_information .row {
     margin-right: 0;
     margin-left: 0;
 }
+.content .block_price_list {
+    display: block;
+}
+.content .block_price_list .price-delivere,
+.content .block_price_list .price-pickup,
+.content .block_price_list .price-pay {
+    height: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+}
 .content .block_price_list .price-delivere {
     background: url(../img/icon-delivery.png) no-repeat center 10px;
-    text-align: center;
 }
 .content .block_price_list .price-pickup {
     background: url(../img/icon-pickup.png) no-repeat center 10px;
-    text-align: center;
 }
 .content .block_price_list .price-pay {
     background: url(../img/icon-pay.png) no-repeat center 10px;
-    text-align: center;
 }
-.content .block_price_list  .information-item {
+.content .block_price_list .information-item {
     color: #464646;
     font-size: 13px;
+    margin-top: 50px;
     text-decoration: none;
 }
-.content .block_price_list  .information-item:hover {
+.content .block_price_list .information-item > p {
+    padding-top: 40px;
+}
+.content .block_price_list .information-item:hover {
     font-size: 14px;
-    transition: all 0.2s linear;
+    transition: all 0.1s linear;
 }
 .content .block_price_information .block_phone_order {
     background: url(../img/icon-phone.png) no-repeat right center #fff;
@@ -206,13 +219,13 @@
 }
 .content .tabs .nav-pills .item .item-link {
     background: #000;
+    border-radius: 5px;
     border: 1px solid #000;
     color: #fff;
     cursor: pointer;
     font-family: 'univers_condensedmedium'!important;
     font-size: 16px;
     padding: 7px 25px;
-    border-radius: 5px;
 }
 .content .pppp {
     border-bottom: 1px solid #c2c2c2;;
